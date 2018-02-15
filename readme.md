@@ -43,7 +43,7 @@ See the [test results of a simple demo site](https://observatory.mozilla.org/ana
 
 ## Should I expect problems?
 
-The most common "error" that may turn up is therefore simply that a script or some other resource is disallowed. Make sure to check the console for any errors.
+The most common "error" that may turn up is simply that a script or some other resource is disallowed. Make sure to check the console for any errors.
 
 ## Strongly encouraged: Set up HTTPS redirections
 
