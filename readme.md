@@ -8,8 +8,38 @@ In any regard, having a limited white-listing policy instead of an extensive bla
 
 ## Features
 
-* Ready templates for Netlify, Apache and Nginx
-* Based on an enforced version of the [H5BP Apache config](https://github.com/h5bp/server-configs-apache)
+* **Ready-made templates for Netlify, Apache, IIS and Nginx**: The only thing yoy need to do is set your allowed domains and your optional Report URI domain
+* **Preconfigured to be maximally enclosed**: Uses zero-trust whitelisting policy instead of blacklisting every potential threat
+* **Will give you an A+ rating on Mozilla Observatory** as long as you redirect to HTTPS and don't loosen control too much
+
+## Choose your solution
+
+* **Netlify**: _headers
+* **Apache**: .htaccess
+* **Nginx**: nginx.conf
+* **IIS**: web.config
+
+Drop the file in your deployed folder (usually /dist) and your server should automatically pick up the configuration.
+
+### Netlify
+
+Go ahead and test any settings at [Netlify Playground](https://play.netlify.com/headers).
+
+### Apache
+
+The Apache (.htaccess) file is a slightly enforced and configured version of the [H5BP Apache config](https://github.com/h5bp/server-configs-apache). It contains tons of settings that make this much more elaborate than the other versions. Go ahead and explore it for a bit if you are keen on additional server settings.
+
+### Nginx
+
+Here I have basically no knowledge. If none of this works, do a pull request or mail me. Any pointers and advise is helpful!
+
+### IIS
+
+IIS should be able to be configured right from the IIS Manager panel as well, in case you really hate config files.
+
+## Test your security
+
+See the [test results of a simple demo site](https://observatory.mozilla.org/analyze.html?host=hisec.mikaelvesavuori.se) running on a plain-vanilla Hisec setup. Remember: A more complex site needs to make more considerations and open more potential vulnerabilities.
 
 ## Should I expect problems?
 
@@ -27,6 +57,6 @@ There's already a report-uri snippet for you ready to change for your own profil
 
 Use [Mozilla Observatory](https://observatory.mozilla.org) for a bigger check-up, which can also optionally include scores from "third-party" sites such as [Security Headers](https://www.securityheaders.io).
 
-## IIS?
+## IIS... Nginx?
 
-I don't use IIS, but you can get a pretty detailed guide to using Hisec in IIS if you [adapt what Scott Helme writes here](https://scotthelme.co.uk/hardening-your-http-response-headers/).
+I don't use IIS or Nginx, but you can get a pretty detailed guide to using Hisec in IIS if you [adapt what Scott Helme writes here](https://scotthelme.co.uk/hardening-your-http-response-headers/). The Nginx and IIS configs **should** work right away, but please do a PR or give a comment if I can improve these somehow!

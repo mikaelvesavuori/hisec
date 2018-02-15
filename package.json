@@ -1,8 +1,9 @@
 {
-  "name": "hisec",
-  "version": "0.0.1",
-  "description": "Set of extremely intolerant server configs using CSP and headers",
-  "main": "index.js",
-  "author": "Mikael Vesavuori",
-  "license": "MIT"
+	"name": "hisec",
+	"version": "0.0.1",
+	"description":
+		"Hisec is a set of extremely intolerant server configs using CSP and headers",
+	"main": "index.js",
+	"author": "Mikael Vesavuori",
+	"license": "MIT"
 }
