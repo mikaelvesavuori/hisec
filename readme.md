@@ -8,7 +8,7 @@ In any regard, having a limited white-listing policy instead of an extensive bla
 
 ## Features
 
-* **Ready-made templates for Netlify, Apache, IIS and Nginx**: The only thing yoy need to do is set your allowed domains and your optional Report URI domain
+* **Ready-made templates for Netlify, Apache, IIS and Nginx**: The only thing you need to do is set your allowed domains and your optional Report URI domain
 * **Preconfigured to be maximally enclosed**: Uses zero-trust whitelisting policy instead of blacklisting every potential threat
 * **Will give you an A+ rating on Mozilla Observatory** as long as you redirect to HTTPS and don't loosen control too much
 
