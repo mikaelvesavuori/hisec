@@ -1,9 +1,9 @@
 {
 	"name": "hisec",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description":
-		"Hisec is a set of extremely intolerant server configs using CSP and headers",
-	"main": "index.js",
+		"Hisec is a drop-in set of extremely intolerant server security configurations",
+	"main": "index.html",
 	"author": "Mikael Vesavuori",
 	"license": "MIT"
 }
